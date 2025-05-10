@@ -1,0 +1,386 @@
+{
+  "users": [
+    {
+      "name": "Mohamed Ahmed",
+      "email": "mo2.prog@gmail.com",
+      "role": "admin",
+      "id": "1",
+      "password": "Mohamed1234#"
+    },
+    {
+      "id": "2",
+      "name": "seller",
+      "email": "seller@gmail.com",
+      "password": "1234512345",
+      "role": "seller",
+      "approved": true
+    },
+    {
+      "name": "customer",
+      "email": "customer@gmail.com",
+      "role": "customer",
+      "id": "3"
+    },
+    {
+      "id": "5",
+      "name": "seller23",
+      "email": "asd@gmail.com",
+      "role": "seller",
+      "approved": true
+    },
+    {
+      "id": "6",
+      "name": "sell",
+      "email": "seller3@gmail.com",
+      "role": "seller",
+      "approved": true
+    },
+    {
+      "name": "cust",
+      "email": "cust@gmail.com",
+      "password": "12341234",
+      "id": "7"
+    },
+    {
+      "id": "8",
+      "name": "ess",
+      "email": "selle111r@gmail.com",
+      "role": "seller",
+      "approved": true
+    },
+    {
+      "id": "9",
+      "name": "seeee",
+      "email": "seller222@gmail.com",
+      "password": "123123123",
+      "role": "seller",
+      "approved": true
+    },
+    {
+      "id": "10",
+      "name": "sellllllllerew1c",
+      "email": "sellllllllerew@gmail.com",
+      "role": "seller",
+      "approved": true
+    },
+    {
+      "id": "11",
+      "name": "sellllllllerew",
+      "email": "sellllllllerew222@gmail.com",
+      "role": "seller",
+      "approved": true
+    },
+    {
+      "id": "12",
+      "name": "seller12",
+      "email": "sellllllllerew1231@gmail.com",
+      "role": "seller",
+      "approved": true
+    },
+    {
+      "id": "13",
+      "name": "sellerq",
+      "email": "sellerqq@gmail.com",
+      "role": "seller",
+      "approved": true
+    },
+    {
+      "name": "momwomd",
+      "email": "mo@gmail.com",
+      "role": "customer",
+      "id": "14"
+    },
+    {
+      "id": "18",
+      "name": "mosahash",
+      "email": "mosahash@gmai.com",
+      "password": "12341234",
+      "role": "customer",
+      "approved": true
+    },
+    {
+      "id": "20",
+      "name": "seelleer12",
+      "email": "selller12@gmail.com",
+      "password": "seller1234",
+      "role": "seller",
+      "approved": true
+    },
+    {
+      "id": "21",
+      "name": "customer11",
+      "email": "asd@gmail.com",
+      "password": "12341234",
+      "role": "seller",
+      "approved": true
+    },
+    {
+      "id": "22",
+      "name": "mohamed",
+      "email": "mmohamed1@gmail.com",
+      "password": "1234512345",
+      "role": "customer",
+      "order_ids": [],
+      "address": ""
+    },
+    {
+      "id": "23",
+      "name": "mo",
+      "email": "mo111@gmail.com",
+      "password": "12341234",
+      "role": "seller",
+      "approved": true
+    },
+    {
+      "id": "24",
+      "name": "seller",
+      "email": "seelleer121@gmail.com",
+      "password": "12341234",
+      "role": "seller",
+      "approved": true
+    }
+  ],
+  "products": [
+    {
+      "id": "1",
+      "name": "Shoes",
+      "price": "$121.00",
+      "category": "Shoes",
+      "sellerId": "2",
+      "approved": true,
+      "images": [
+        {
+          "url": "/images/products/shoes.png",
+          "color": "black"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Iphone",
+      "price": "$300.00",
+      "category": "Phone",
+      "sellerId": "2",
+      "approved": true,
+      "images": [
+        {
+          "url": "/images/products/iphone.jpg",
+          "color": "black"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "name": "realme6",
+      "price": "$200.00",
+      "category": "mobile",
+      "sellerId": "2",
+      "approved": true,
+      "images": [
+        {
+          "url": "/images/products/phone.jpg",
+          "color": "blue"
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "name": "Adidas",
+      "price": "$150.00",
+      "category": "Shoes",
+      "sellerId": "2",
+      "approved": true,
+      "images": [
+        {
+          "url": "/images/products/black_shoes.jpg",
+          "color": "black"
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "name": "Nike",
+      "price": "$166.00",
+      "category": "Shoes",
+      "sellerId": "2",
+      "approved": true,
+      "images": [
+        {
+          "url": "/images/products/white_blackShoes.jpg",
+          "color": "black"
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "name": "Hp ",
+      "price": "$1000.00",
+      "category": "Labtop",
+      "sellerId": "2",
+      "approved": true,
+      "images": [
+        {
+          "url": "/images/products/labtop.jpg",
+          "color": "black"
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "name": "Dell",
+      "price": "$1200.00",
+      "category": "Labtop",
+      "sellerId": "2",
+      "approved": true,
+      "images": [
+        {
+          "url": "/images/products/lap.jpg",
+          "color": "white"
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "name": "Shoes",
+      "price": "$1212.00",
+      "category": "Shoes",
+      "sellerId": "2",
+      "approved": true,
+      "images": [
+        {
+          "url": "/images/products/shoes.png",
+          "color": "green"
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "name": "Shoes",
+      "price": "$333333333.00",
+      "category": "Shoes",
+      "sellerId": "2",
+      "approved": true,
+      "images": [
+        {
+          "url": "/images/products/shoes.png",
+          "color": "red"
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "name": "labtop",
+      "price": "$120012.00",
+      "category": "Labtop",
+      "sellerId": "2",
+      "approved": true,
+      "images": [
+        {
+          "url": "/products/images/labtop.jpg",
+          "color": "orange"
+        }
+      ]
+    }
+  ],
+  "orders": [
+    {
+      "id": "3",
+      "customerName": "cust",
+      "products": [
+        {
+          "productID": 7,
+          "quantity": 1,
+          "price": "1200.00",
+          "sellerId": "2"
+        }
+      ],
+      "date": "5/8/2025, 7:56:16 PM",
+      "total": "1200.00",
+      "status": "delivered"
+    },
+    {
+      "id": "4",
+      "customerName": "cust",
+      "customerEmail": "cust@gmail.com",
+      "products": [
+        {
+          "productID": 3,
+          "quantity": 2,
+          "price": "200.00",
+          "sellerId": "2"
+        }
+      ],
+      "date": "5/8/2025, 8:50:35 PM",
+      "total": "400.00",
+      "status": "Pending"
+    },
+    {
+      "id": "5",
+      "customerName": "cust",
+      "products": [
+        {
+          "productID": 7,
+          "quantity": 1,
+          "price": "1200.00",
+          "sellerId": "2"
+        }
+      ],
+      "date": "5/9/2025, 1:38:39 AM",
+      "total": "1200.00",
+      "status": "delivered"
+    },
+    {
+      "id": "6",
+      "customerName": "cust",
+      "products": [
+        {
+          "productID": 7,
+          "quantity": 10,
+          "price": "1200.00",
+          "sellerId": "2"
+        }
+      ],
+      "date": "5/9/2025, 1:41:49 AM",
+      "total": "12000.00",
+      "status": "delivered"
+    },
+    {
+      "id": "7",
+      "customerName": "cust",
+      "customerEmail": "cust@gmail.com",
+      "products": [
+        {
+          "productID": 3,
+          "quantity": 1,
+          "price": "200.00",
+          "sellerId": "2"
+        },
+        {
+          "productID": 2,
+          "quantity": 1,
+          "price": "300.00",
+          "sellerId": "2"
+        }
+      ],
+      "date": "5/9/2025, 1:44:19 AM",
+      "total": "500.00",
+      "status": "Pending"
+    },
+    {
+      "id": "8",
+      "customerName": "cust",
+      "customerEmail": "cust@gmail.com",
+      "products": [
+        {
+          "productID": 7,
+          "quantity": 1,
+          "price": "1200.00",
+          "sellerId": "2"
+        }
+      ],
+      "date": "5/9/2025, 2:06:54 AM",
+      "total": "1200.00",
+      "status": "Pending"
+    }
+  ]
+}
