@@ -1,6 +1,4 @@
 import { Product } from './models/Product.js';
-import { Order } from './models/Order.js';
-
 // === Utilities ===
 function parseFloatSafe(value) {
   return parseFloat(value || "0");
@@ -23,18 +21,8 @@ async function getMaxOrderId() {
     throw error;
   }
 }
-
 async function fetchUserData(userId) {
   return await fetchJSON(`http://localhost:3000/users/${userId}`);
-}
-
-async function postOrder(newOrder) {
-  const response = await fetch("http://localhost:3000/orders", {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify(newOrder),
-  });
-  if (!response.ok) throw new Error("Failed to create order.");
 }
 // === Order Display ===
 async function displayOrders() {
@@ -104,13 +92,11 @@ async function handleOrderSubmit(event) {
       status: document.querySelector("#status").value,
     };
 
-    await postOrder(newOrder);
     await displayOrders();
     event.target.reset();
   } catch (error) {
     console.error("Order submission failed:", error);
   }
 }
-
 window.addEventListener("load", displayOrders);
 document.querySelector("#order-form").addEventListener("submit", handleOrderSubmit);

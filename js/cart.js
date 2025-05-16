@@ -1,66 +1,11 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const mostPopProducts = document.querySelector(".most-popular-products");
   fetch("http://localhost:3000/products")
     .then((response) => response.json())
     .then((data) => {
       data.forEach(renderProductCard);
-      setupColorSelection();
     })
     .catch((error) => console.error("Error fetching products:", error));
 });
-
-function renderProductCard(product) {
-  const { id, name, price, category, images, approved } = product;
-  if (!approved) return;
-
-  const productHTML = `
-    <div class="product-card" data-product-id="${id}">
-      <div class="product-card__container">
-        <div class="product-card__btn cart" data-tooltip="add to cart" onclick="addToCart(${id})">
-          <i class="fas fa-shopping-cart"></i>
-        </div>
-        <div class="product-card__btn fav" data-tooltip="add to wishlist">
-          <i class="fas fa-heart"></i>
-        </div>
-        <div class="product-card__img">
-          <img src="${images[0].url}" alt="${name}" />
-        </div>
-      </div>
-      <div class="product-card__description">
-        <div class="product-card__text">${name}</div>
-        <div class="product-card__price">${price}</div>
-        <div class="product-card__category">${category}</div>
-      </div>
-      <div class="product-card__color">
-        ${images.map(image => `
-          <button class="product-card__btn-radio" data-img="${image.url}">
-            <span style="background-color: ${image.color};"></span>
-          </button>
-        `).join("")}
-      </div>
-    </div>
-  `;
-  document.querySelector(".most-popular-products").innerHTML += productHTML;
-}
-
-function setupColorSelection() {
-  document.querySelectorAll(".product-card__color").forEach(pcc => {
-    pcc.firstElementChild?.classList.add("selected");
-  });
-
-  document.addEventListener("click", (event) => {
-    if (event.target.classList.contains("product-card__btn-radio")) {
-      const radioBtn = event.target;
-      const productCard = radioBtn.closest(".product-card");
-      const productImg = productCard.querySelector(".product-card__img > img");
-      const proRadioBtns = productCard.querySelectorAll(".product-card__btn-radio");
-
-      proRadioBtns.forEach(btn => btn.classList.remove("selected"));
-      radioBtn.classList.add("selected");
-      productImg.src = radioBtn.dataset.img;
-    }
-  });
-}
 
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
 const cartTotal = document.getElementById("cart-total");
