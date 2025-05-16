@@ -42,6 +42,7 @@ o Search for and filter products.<br>
 o Add products to the cart and proceed to checkout.<br>
 • Reviews and Ratings:<br>
 o Leave reviews and ratings for purchased products.<br>
+Chatbot :The Customer Page includes an chatbot to assist with common questions, provide quick tips, and enhance the overall user experience<br>
 
 # 4. Anonymous User<br>
 Anonymous users can explore the platform with limited access. To make purchases or<br> 
