@@ -30,7 +30,7 @@
     },
     {
       "id": "6",
-      "name": "sell",
+      "name": "selldsc",
       "email": "seller3@gmail.com",
       "role": "seller",
       "approved": true
@@ -138,125 +138,27 @@
       "password": "12341234",
       "role": "seller",
       "approved": true
+    },
+    {
+      "name": "sa",
+      "email": "sa@gmail.com",
+      "role": "customer",
+      "id": "25"
+    },
+    {
+      "id": "26",
+      "name": "seelleer12",
+      "email": "sellleerrrrrrrrrrrrrrrr@gmail.com",
+      "password": "12341234",
+      "role": "seller",
+      "approved": true
     }
   ],
   "products": [
     {
       "id": "1",
       "name": "Shoes",
-      "price": "$121.00",
-      "category": "Shoes",
-      "sellerId": "2",
-      "approved": true,
-      "images": [
-        {
-          "url": "/images/products/shoes.png",
-          "color": "black"
-        }
-      ]
-    },
-    {
-      "id": "2",
-      "name": "Iphone",
-      "price": "$300.00",
-      "category": "Phone",
-      "sellerId": "2",
-      "approved": true,
-      "images": [
-        {
-          "url": "/images/products/iphone.jpg",
-          "color": "black"
-        }
-      ]
-    },
-    {
-      "id": "3",
-      "name": "realme6",
-      "price": "$200.00",
-      "category": "mobile",
-      "sellerId": "2",
-      "approved": true,
-      "images": [
-        {
-          "url": "/images/products/phone.jpg",
-          "color": "blue"
-        }
-      ]
-    },
-    {
-      "id": "4",
-      "name": "Adidas",
-      "price": "$150.00",
-      "category": "Shoes",
-      "sellerId": "2",
-      "approved": true,
-      "images": [
-        {
-          "url": "/images/products/black_shoes.jpg",
-          "color": "black"
-        }
-      ]
-    },
-    {
-      "id": "5",
-      "name": "Nike",
-      "price": "$166.00",
-      "category": "Shoes",
-      "sellerId": "2",
-      "approved": true,
-      "images": [
-        {
-          "url": "/images/products/white_blackShoes.jpg",
-          "color": "black"
-        }
-      ]
-    },
-    {
-      "id": "6",
-      "name": "Hp ",
-      "price": "$1000.00",
-      "category": "Labtop",
-      "sellerId": "2",
-      "approved": true,
-      "images": [
-        {
-          "url": "/images/products/labtop.jpg",
-          "color": "black"
-        }
-      ]
-    },
-    {
-      "id": "7",
-      "name": "Dell",
-      "price": "$1200.00",
-      "category": "Labtop",
-      "sellerId": "2",
-      "approved": true,
-      "images": [
-        {
-          "url": "/images/products/lap.jpg",
-          "color": "white"
-        }
-      ]
-    },
-    {
-      "id": "8",
-      "name": "Shoes",
-      "price": "$1212.00",
-      "category": "Shoes",
-      "sellerId": "2",
-      "approved": true,
-      "images": [
-        {
-          "url": "/images/products/shoes.png",
-          "color": "green"
-        }
-      ]
-    },
-    {
-      "id": "9",
-      "name": "Shoes",
-      "price": "$333333333.00",
+      "price": "$123.00",
       "category": "Shoes",
       "sellerId": "2",
       "approved": true,
@@ -268,119 +170,323 @@
       ]
     },
     {
-      "id": "10",
-      "name": "labtop",
-      "price": "$120012.00",
+      "id": "2",
+      "name": "Hp ",
+      "price": "$1400.00",
       "category": "Labtop",
       "sellerId": "2",
       "approved": true,
       "images": [
         {
-          "url": "/products/images/labtop.jpg",
-          "color": "orange"
+          "url": "/images/products/labtop.jpg",
+          "color": "black"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "name": "Adidas",
+      "price": "$190.00",
+      "category": "Shoes",
+      "sellerId": "2",
+      "approved": true,
+      "images": [
+        {
+          "url": "/images/products/black_shoes.jpg",
+          "color": "black"
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "name": "IPHONE",
+      "price": "$400.00",
+      "category": "mobile",
+      "sellerId": "2",
+      "approved": true,
+      "images": [
+        {
+          "url": "/images/products/iphone.jpg",
+          "color": "black"
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "name": "Hp Zbook",
+      "price": "$1300.00",
+      "category": "Labtop",
+      "sellerId": "2",
+      "approved": true,
+      "images": [
+        {
+          "url": "/images/products/lap.jpg",
+          "color": "white"
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "name": "realme6",
+      "price": "$900.00",
+      "category": "mobile",
+      "sellerId": "2",
+      "approved": true,
+      "images": [
+        {
+          "url": "/images/products/phone.jpg",
+          "color": "blue"
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "name": "Nike",
+      "price": "$320.00",
+      "category": "Shoes",
+      "sellerId": "2",
+      "approved": true,
+      "images": [
+        {
+          "url": "/images/products/white_blackShoes.jpg",
+          "color": "black"
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "name": "Al Doha",
+      "price": "$20.00",
+      "category": "rice",
+      "sellerId": "2",
+      "approved": true,
+      "images": [
+        {
+          "url": "/images/products/rice.jpg",
+          "color": "blue"
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "name": "SoundCore",
+      "price": "$400.00",
+      "category": "headphones",
+      "sellerId": "2",
+      "approved": true,
+      "images": [
+        {
+          "url": "/images/products/sound.jpg",
+          "color": "black"
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "name": "Vanish in sunset",
+      "price": "$55.00",
+      "category": "Book",
+      "sellerId": "2",
+      "approved": true,
+      "images": [
+        {
+          "url": "/images/products/Vanish in sunset.jpg",
+          "color": ""
+        }
+      ]
+    },
+    {
+      "id": "11",
+      "name": "A Time of fortune",
+      "price": "$65.00",
+      "category": "Book",
+      "sellerId": "2",
+      "approved": true,
+      "images": [
+        {
+          "url": "/images/products/A Time of fortune.jpg",
+          "color": ""
+        }
+      ]
+    },
+    {
+      "id": "12",
+      "name": "CottonCandy",
+      "price": "$50.00",
+      "category": "Book",
+      "sellerId": "2",
+      "approved": true,
+      "images": [
+        {
+          "url": "/images/products/CottonCandy.jpg",
+          "color": ""
+        }
+      ]
+    },
+    {
+      "id": "13",
+      "name": "Dark Skies",
+      "price": "$52.00",
+      "category": "Book",
+      "sellerId": "2",
+      "approved": true,
+      "images": [
+        {
+          "url": "/images/products/Dark Skies.jpg",
+          "color": ""
+        }
+      ]
+    },
+    {
+      "id": "14",
+      "name": "Leaves and wonders",
+      "price": "$68.00",
+      "category": "Book",
+      "sellerId": "2",
+      "approved": true,
+      "images": [
+        {
+          "url": "/images/products/Leaves and wonders.jpg",
+          "color": ""
+        }
+      ]
+    },
+    {
+      "id": "15",
+      "name": "Rock in the ocean",
+      "price": "$65.00",
+      "category": "Book",
+      "sellerId": "2",
+      "approved": true,
+      "images": [
+        {
+          "url": "/images/products/Rock in the ocean.jpg",
+          "color": ""
         }
       ]
     }
   ],
   "orders": [
     {
-      "id": "3",
-      "customerName": "cust",
-      "products": [
-        {
-          "productID": 7,
-          "quantity": 1,
-          "price": "1200.00",
-          "sellerId": "2"
-        }
-      ],
-      "date": "5/8/2025, 7:56:16 PM",
-      "total": "1200.00",
-      "status": "delivered"
-    },
-    {
-      "id": "4",
+      "id": "1",
       "customerName": "cust",
       "customerEmail": "cust@gmail.com",
       "products": [
         {
           "productID": 3,
-          "quantity": 2,
-          "price": "200.00",
+          "quantity": 1,
+          "price": "190.00",
           "sellerId": "2"
         }
       ],
-      "date": "5/8/2025, 8:50:35 PM",
+      "date": "5/15/2025, 10:59:06 PM",
+      "total": "190.00",
+      "status": "Pending"
+    },
+    {
+      "id": "2",
+      "customerName": "cust",
+      "customerEmail": "cust@gmail.com",
+      "products": [
+        {
+          "productID": 13,
+          "quantity": 1,
+          "price": "52.00",
+          "sellerId": "2"
+        }
+      ],
+      "date": "5/15/2025, 11:01:40 PM",
+      "total": "52.00",
+      "status": "Pending"
+    },
+    {
+      "id": 3,
+      "customerName": "cust",
+      "customerEmail": "cust@gmail.com",
+      "products": [
+        {
+          "productID": 3,
+          "quantity": 1,
+          "price": "190.00",
+          "sellerId": "2"
+        }
+      ],
+      "date": "5/16/2025, 12:03:46 PM",
+      "total": "190.00",
+      "status": "Pending"
+    },
+    {
+      "id": 4,
+      "customerName": "cust",
+      "customerEmail": "cust@gmail.com",
+      "products": [
+        {
+          "productID": 3,
+          "quantity": 1,
+          "price": "190.00",
+          "sellerId": "2"
+        }
+      ],
+      "date": "5/16/2025, 12:04:57 PM",
+      "total": "190.00",
+      "status": "Pending"
+    },
+    {
+      "id": 5,
+      "customerName": "cust",
+      "customerEmail": "cust@gmail.com",
+      "products": [
+        {
+          "productID": 3,
+          "quantity": 1,
+          "price": "190.00",
+          "sellerId": "2"
+        }
+      ],
+      "date": "5/16/2025, 12:05:33 PM",
+      "total": "190.00",
+      "status": "Pending"
+    },
+    {
+      "id": 6,
+      "customerName": "cust",
+      "customerEmail": "cust@gmail.com",
+      "products": [
+        {
+          "productID": 4,
+          "quantity": 1,
+          "price": "400.00",
+          "sellerId": "2"
+        }
+      ],
+      "date": "5/16/2025, 12:07:51 PM",
       "total": "400.00",
       "status": "Pending"
     },
     {
-      "id": "5",
-      "customerName": "cust",
-      "products": [
-        {
-          "productID": 7,
-          "quantity": 1,
-          "price": "1200.00",
-          "sellerId": "2"
-        }
-      ],
-      "date": "5/9/2025, 1:38:39 AM",
-      "total": "1200.00",
-      "status": "delivered"
-    },
-    {
-      "id": "6",
-      "customerName": "cust",
-      "products": [
-        {
-          "productID": 7,
-          "quantity": 10,
-          "price": "1200.00",
-          "sellerId": "2"
-        }
-      ],
-      "date": "5/9/2025, 1:41:49 AM",
-      "total": "12000.00",
-      "status": "delivered"
-    },
-    {
-      "id": "7",
+      "id": 7,
       "customerName": "cust",
       "customerEmail": "cust@gmail.com",
       "products": [
         {
-          "productID": 3,
+          "productID": 6,
           "quantity": 1,
-          "price": "200.00",
-          "sellerId": "2"
-        },
-        {
-          "productID": 2,
-          "quantity": 1,
-          "price": "300.00",
+          "price": "900.00",
           "sellerId": "2"
         }
       ],
-      "date": "5/9/2025, 1:44:19 AM",
-      "total": "500.00",
+      "date": "5/16/2025, 12:08:27 PM",
+      "total": "900.00",
       "status": "Pending"
-    },
+    }
+  ],
+  "reviews": [
     {
-      "id": "8",
-      "customerName": "cust",
-      "customerEmail": "cust@gmail.com",
-      "products": [
-        {
-          "productID": 7,
-          "quantity": 1,
-          "price": "1200.00",
-          "sellerId": "2"
-        }
-      ],
-      "date": "5/9/2025, 2:06:54 AM",
-      "total": "1200.00",
-      "status": "Pending"
+      "id": "393c",
+      "productId": "4",
+      "text": "nice device",
+      "rating": 5,
+      "date": "2025-05-16T10:48:12.796Z"
     }
   ]
 }
