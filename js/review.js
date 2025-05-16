@@ -1,44 +1,56 @@
-const reviewForm = document.getElementById("review-form");
 
-if (reviewForm) {
-  reviewForm.addEventListener("submit", async (e) => {
-    e.preventDefault();
+        document.addEventListener("DOMContentLoaded", () => {
+            const reviewForm = document.getElementById("review-form");
+            const reviewsContainer = document.getElementById("reviews-container");
+            const reviewSection = document.getElementById("review-section");
+            const productId = reviewSection.getAttribute("data-product-id"); // Get the product ID
 
-    const reviewText = document.getElementById("review-text").value;
-    const reviewRating = document.getElementById("review-rating").value;
+            // Load reviews for the current product
+            const loadReviews = () => {
+                const reviews = JSON.parse(localStorage.getItem(`reviews_${productId}`)) || [];
+                reviewsContainer.innerHTML = reviews
+                    .map(
+                        (review) => `
+                        <div class="review-item">
+                            <div class="review-rating">
+                                ${"★".repeat(review.rating)}${"☆".repeat(5 - review.rating)}
+                            </div>
+                            <div class="review-product">Product: ${review.productName}</div>
+                            <div class="review-text">${review.text}</div>
+                            <div class="review-date">${new Date(review.date).toLocaleString()}</div>
+                        </div>
+                    `
+                    )
+                    .join("");
+            };
 
-    const review = {
-      productId: currentProductId, 
-      text: reviewText,
-      rating: reviewRating,
-      date: new Date().toLocaleString(),
-    };
+            // Save review for the current product
+            reviewForm.addEventListener("submit", (e) => {
+                e.preventDefault();
+                const reviewText = document.getElementById("review-text").value;
+                const reviewRating = document.getElementById("review-rating").value;
+                const productName = document.getElementById("product-name").value;
 
-    // Save the review to JSON Server
-    const response = await fetch("http://localhost:3000/reviews", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(review),
-    });
+                if (reviewText && reviewRating && productName) {
+                    const review = {
+                        text: reviewText,
+                        rating: parseInt(reviewRating),
+                        date: new Date().toISOString(),
+                        productName: productName, // Include product name in the review
+                    };
 
-    if (response.ok) {
-      Swal.fire({
-        title: "Review Submitted!",
-        text: "Thank you for your review.",
-        icon: "success",
-        confirmButtonColor: "#fd5d5c",
-      });
-      document.getElementById("review-form").reset();
-      displayReviews(currentProductId); // Refresh reviews
-    } else {
-      Swal.fire({
-        title: "Error!",
-        text: "Failed to submit review. Please try again.",
-        icon: "error",
-        confirmButtonColor: "#fd5d5c",
-      });
-    }
-  });
-} else {
-  console.warn("Review form not found on this page.");
-}
+                    const reviews = JSON.parse(localStorage.getItem(`reviews_${productId}`)) || [];
+                    reviews.push(review);
+                    localStorage.setItem(`reviews_${productId}`, JSON.stringify(reviews));
+
+                    // Clear form
+                    reviewForm.reset();
+
+                    // Reload reviews
+                    loadReviews();
+                }
+            });
+
+            // Initial load of reviews
+            loadReviews();
+        });
